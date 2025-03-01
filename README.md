@@ -35,3 +35,37 @@ Sanket Purandare, Abdul Wasay, Animesh Jain, Stratos Idreos:
 3. The official PyTorch documents
 
 [torch.fx](https://pytorch.org/docs/2.5/fx.html) is particularly relevant to our project.
+
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+check terminal type
+```bash
+echo $SHELL
+```
+
+If bash, check for profie
+```bash
+ls -la ~/.bashrc ~/.bash_profile ~/.profile
+```
+if bash, add poetry to path and reload
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+use vim and not nano
+```bash
+echo 'export EDITOR=vim' >> ~/.bashrc
+source ~/.bashrc
+```
+
+install cuda
+```bash
+sudo apt update
+sudo apt install -y nvidia-driver-535
+sudo reboot
+```
+
