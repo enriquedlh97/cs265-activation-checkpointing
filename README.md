@@ -69,3 +69,20 @@ sudo apt install -y nvidia-driver-535
 sudo reboot
 ```
 
+Confimr cuda version, if 12.2
+
+first time pytorch installation
+```bash
+poetry source add --priority=explicit pytorch https://download.pytorch.org/whl/cu124
+poetry add --source pytorch torch torchvision torchaudio
+```
+
+check gpu support
+```bash
+poetry run python -c "import torch; print(torch.cuda.is_available())"
+```
+
+full script
+
+```bash
+```
